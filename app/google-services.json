@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "405375228400",
+    "firebase_url": "https://sizzlingbites-f156a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sizzlingbites-f156a",
+    "storage_bucket": "sizzlingbites-f156a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405375228400:android:8efba8d96f0a235676a535",
+        "android_client_info": {
+          "package_name": "com.example.sizzlingbitesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyOY05fGnYlE9JZuk3aDuikkaADhW2fHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg">
+
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sansitalic"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/sizz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sizzling"
+            android:textSize="48dp"
+            android:textColor="#E6C058"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/bungee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sizz"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-75dp"
+            android:layout_marginStart="10dp"
+            android:text="bites"
+            android:textSize="48dp"
+            android:textColor="#E6C058"
+            android:fontFamily="@font/bungee"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="182dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/countrycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sansitalic"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/phoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/sansitalic"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="18dp"/>
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/edit_bg"
+            android:layout_marginTop="6dp">
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/setting_profile" />
+
+        </RelativeLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/edit"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/countrycode"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="158dp"
+                android:background="@drawable/edit_bg">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:text="Edit"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sansitalic"
+                    android:textStyle="bold"
+                   />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manageAddress"
+        android:layout_width="159dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="286dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:layout_marginTop="40dp"
+            android:text="Manage Address"
+            android:fontFamily="@font/sansitalic"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16.5sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/paymentSetting"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="286dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:fontFamily="@font/sansitalic"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:text="Payment"
+            android:textColor="@color/white"
+            android:textSize="16.5sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/favourites"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="394dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/sansitalic"
+            android:text="Favorites"
+            android:textColor="@color/white"
+            android:textSize="16.5sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderHistory"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="394dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28sp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/sansitalic"
+            android:text="Order History"
+            android:textColor="@color/white"
+            android:textSize="16.5sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/offers"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="502dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/sansitalic"
+            android:text="Offers"
+            android:textColor="@color/white"
+            android:textSize="16.5sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/refferals"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="502dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23sp"
+            android:layout_marginTop="43dp"
+            android:fontFamily="@font/sansitalic"
+            android:text="Refferals"
+            android:textColor="@color/white"
+            android:textSize="16.5sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/privacyPolicy"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="610dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/sansitalic"
+            android:text="Privacy Policy"
+            android:textColor="@color/white"
+            android:textSize="16.5sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

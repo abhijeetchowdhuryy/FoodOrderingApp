@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFE7F5C">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="-30dp"
+            android:src="@drawable/edit_img" />
+
+        <TextView
+            android:id="@+id/sizz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/bungee"
+            android:text="manage"
+            android:textColor="#FFFE7F5C"
+            android:textSize="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sizz"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-75dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bungee"
+            android:text="address"
+            android:textColor="#FFFE7F5C"
+            android:textSize="48dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/previousAddress"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="270dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_bg">
+
+        <RadioButton
+            android:id="@+id/myRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="5dp"
+            android:buttonTint="#FFFE7F5C" />
+
+        <TextView
+            android:id="@+id/previousAddressText"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="20dp"
+            android:text="android:layout_width and android:layout_height: Specifies the width and height of the radio button. You can set these attributes to either specific dimensions or wrap_content to fit the content.
+                          android:text: Sets the text displayed next to the radio button.
+                          android:checked: Sets whether the radio button is initially checked (true) or not (false).
+                          android:buttonTint: Sets the color tint of the radio button. This attribute is optiona"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/newAddress"
+            style="@style/MaterialAlertDialog.Material3.Title.Icon.CenterStacked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/search_bg"
+            android:hint=" Enter your New Address"
+            android:transitionName="emailTrans">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="141dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#E6B0C9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:strokeWidth="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/bungee"
+                android:onClick="update"
+                android:text="update"
+                android:textColor="#FFFE7F5C"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:transitionName="button_tran" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
