@@ -30,7 +30,7 @@ public class ApplicationMain extends Application implements UpdateSelectedItems 
     }
 
     @Override
-    public List<Item> getItems2() {
+    public List<Item> getItems() {
         return null;
     }
 }

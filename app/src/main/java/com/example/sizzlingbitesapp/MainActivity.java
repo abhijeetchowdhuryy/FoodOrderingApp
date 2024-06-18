@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
     }
 
     @Override
-    public List<Item> getItems2() {
+    public List<Item> getItems() {
         // Implement this method to return the list of items you want to pass to the ConfirmOrderFragment
         // For example:
         List<Item> items = new ArrayList<>();
